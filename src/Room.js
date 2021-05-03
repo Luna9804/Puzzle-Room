@@ -8,11 +8,13 @@ export default function Room() {
 
   let handleClick = () => {
     console.log("Test");
+    setButtonPressed(true);
   };
+
   return (
     <div className="Room">
       <h1>R1</h1>
-
+      {isButtonPressed.toString()}
       <button onClick={() => handleClick()}>button: {isButtonPressed}</button>
 
       <h2> </h2>
