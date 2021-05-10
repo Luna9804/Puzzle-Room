@@ -1,18 +1,24 @@
 import "./styles.css";
-import React from "react";
+import React, { useState } from "react";
 
-export default class Room extends React.Component {
-handleClick(){
-console.log("Test");
-}
-  render() {
-    return (
-      <div className="Room">
-        <h1>R1</h1>
+export default function Room() {
+  // TODO: Create state "isButtonPressed".
+  // let [ isAnswered, setIsAnswered ] = useState(false);
+  let [isButtonPressed, setButtonPressed] = useState(false);
 
-        <button onClick = {this.handleClick()}> button</button>
-        <h2> </h2>
-      </div>
-    );
-  }
+  let handleClick = () => {
+    console.log("Test");
+    setButtonPressed(true);
+  };
+
+  return (
+    <div className="Room">
+      <h1>R1</h1>
+      {isButtonPressed.toString()}
+      <button onClick={() => handleClick()}>button: {isButtonPressed}</button>
+
+      <h2> </h2>
+    </div>
+  );
+
 }
