@@ -8,12 +8,12 @@ export default function Room() {
   let [isButtonPressed, setButtonPressed] = useState(false);
   let Room1;
   if (isButtonPressed === false){
-    Room1 = <div><h1>R1</h1><button onClick={() => handleClick()}>button: {isButtonPressed}</button></div>
+    Room1 = <div><h1>Welcome to Room 1</h1><button onClick={() => handleClick()}>Press Me {isButtonPressed}</button></div>
   }else{
     Room1 = <Room2/>;
   }
   let handleClick = () => {
-    console.log("Test");
+  
     setButtonPressed(true);
   };
 

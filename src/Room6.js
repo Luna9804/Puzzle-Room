@@ -1,23 +1,20 @@
 import "./styles.css";
-import React, { useState } from "react";
-import Room5 from "./Room5.js";
-export default function Room4() {
-  let [isCorrectAnswer, setCorrectAnswer] = useState(false);
-  let Room4;
-  let answer = "codenation";
-  
+import React, { useState } from "react"
+export default function Room6() {let [isCorrectAnswer, setCorrectAnswer] = useState(false);
+  let Room6;
+  let answer = "true";
   if (isCorrectAnswer === false) {
-    Room4 = (
+    Room6= (
       <div>
-        <h1> Welcome to Room 4</h1>
-        <h2>Enter the correct word</h2>
+        <h1> Welcome to Room 6</h1>
+        <h2> Is null an object in javascript?</h2>
         <input type="text" id="Response"></input>
         <button onClick={() => handleClick()}>Enter</button>
-        <p style={{color : 'white'}}>codenation</p>
+      
       </div>
     );
   } else {
-    Room4 = <Room5 />;
+    Room6 = <div><h1>Congrats on finishing the puzzle</h1></div>;
   }
   let handleClick = () => {
     let response = document.getElementById("Response").value;
@@ -30,7 +27,7 @@ export default function Room4() {
 
   };
 
-  return <div className="Room4">{Room4}</div>;
+  return <div className="Room6">{Room6}</div>;
 
 }
-
+ 

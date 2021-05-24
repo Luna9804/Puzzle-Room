@@ -4,12 +4,12 @@ import Room4 from "./Room4.js";
 export default function Room3() {
   let [isCorrectAnswer, setCorrectAnswer] = useState(false);
   let Room3;
-  let answer = "fake answer";
+  let answer = "true";
   if (isCorrectAnswer === false) {
     Room3 = (
       <div>
-        <h1> Room3</h1>
-        <h1> Trivia question</h1>
+        <h1> Welcome to Room 3</h1>
+        <h2> Is null an object in javascript?</h2>
         <input type="text" id="Response"></input>
         <button onClick={() => handleClick()}>Enter</button>
       </div>
@@ -20,10 +20,12 @@ export default function Room3() {
   let handleClick = () => {
     let response = document.getElementById("Response").value;
     // setButtonPressed(true);
-    if(response === answer){
+    if(response.toLowerCase() === answer){
       setCorrectAnswer(true);
+    }else{
+      document.getElementById("Response").value = "";
     }
-        console.log(response);
+
   };
 
   return <div className="Room3">{Room3}</div>;
