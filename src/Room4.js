@@ -13,7 +13,7 @@ export default function Room4() {
         <h2>Enter the correct word</h2>
         <input type="text" id="Response"></input>
         <button onClick={() => handleClick()}>Enter</button>
-        <p style={{color : 'white'}}>codenation</p>
+        <p style={{color : 'Green'}}>codenation</p>
       </div>
     );
   } else {

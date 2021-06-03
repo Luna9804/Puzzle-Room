@@ -2,3 +2,21 @@
   font-family: sans-serif;
   text-align: center;
 }
+.Room{
+  background-color: red;
+}
+.Room2{
+  background-color: orange;
+}
+.Room3{
+  background-color: yellow;
+}
+.Room4{
+  background-color: green;
+}
+.Room5{
+  background-color: blue;
+}
+.Room6{
+  background-color: indigo;
+}    
