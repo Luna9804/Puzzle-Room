@@ -22,7 +22,7 @@ export default function Room6() {let [isCorrectAnswer, setCorrectAnswer] = useSt
       </div>
     );
   } else {
-    Room6 = <div><h1>Congrats on finishing the puzzle</h1></div>;
+    Room6 = <div className= "Finish"><h1>Congrats on finishing the puzzle</h1></div>;
   }
   let handleClick = () => {
     let response = document.getElementById("Response").value;
